@@ -1,0 +1,213 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+:root {
+  --white: #F9FBFF;
+  --dark: #013f66;
+  --light: #71b0d8;
+  --average: #013f66a4;
+  --graient: linear-gradient(#3da454, #45a45d)
+}
+
+/* css reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+cite {
+  font-style: normal;
+}
+
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 10vh;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  justify-items: center;
+  align-items: center;
+  max-height: 80vh;
+  margin: auto 3vw;
+}
+
+.card {
+  aspect-ratio: 1/ 1;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center center;
+  max-width: 200px;
+  min-width: 110px;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  font-weight: 900;
+  /* background: linear-gradient(to top, black 0%, transparent 25%) */
+}
+
+button {
+  width: 100%;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  font: inherit;
+  text-align: center
+}
+
+#jordan {
+  /* background-image: url(./assets/jordan.png); */
+  background-image: linear-gradient(to top, black 0%, transparent 25%), url('./assets/jordan.png');
+
+  background-color: #BA0C2F;
+}
+
+#lebron {
+  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/lebron.png);
+  background-color: #582C83;
+}
+
+#kareem {
+  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/kareem.png);
+  background-color: #702F8A;
+}
+
+#russell {
+  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/russell.png);
+  background-color: #007A33;
+}
+
+#magic {
+  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/magic.png);
+  background-color: #702F8A;
+}
+
+#wilt {
+  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/wilt.png);
+  background-color: #002F6C;
+}
+
+#bird {
+  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/bird.png);
+  background-color: #007A33;
+}
+
+#shaq {
+  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/shaq.png);
+  background-color: #702F8A;
+}
+
+#duncan {
+  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/duncan.png);
+  background-color: #8D9093;
+}
+
+#kobe {
+  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/kobe.png);
+  background-color: #702F8A;
+}
+
+#hakeem {
+  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/hakeem.png);
+  background-color: #BA0C2F;
+}
+
+#oscar {
+  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/oscar.png);
+  background-color: #002F6C;
+}
+
+#kd {
+  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/kd.png);
+  background-color: #707372;
+}
+
+#west {
+  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/west.png);
+  background-color: #004B87;
+}
+
+#steph {
+  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/steph.png);
+  background-color: #1D4289;
+}
+
+#malone {
+  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/malone.png);
+  background-color: #552582;
+}
