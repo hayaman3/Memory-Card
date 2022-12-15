@@ -4,12 +4,12 @@ import Main from './components/Main';
 
 function App() {
   const [score, setScore] = useState(0);
-  const props = [score, setScore];
+  // const prop = [score, setScore];
 
   return (
     <>
       <Header score={score} />
-      <Main props={props} />
+      <Main score={score} setScore={setScore} />
     </>
   );
 }

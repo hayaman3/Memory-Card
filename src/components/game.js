@@ -1,13 +1,7 @@
-const picked = [];
 
-const userPicked = (e) => {
-  picked.push(e.targe.id);
-  console.log(picked)
-};
 
 // Fisher–Yates Shuffle
 function shuffleId() {
-  // const idArray = ["kareem","lebron","jordan","kobe"]
   const playerList = [
     {name:"Michael Jordan",id:"jordan"},
     {name:"Lebron James",id:"lebron"},
@@ -46,4 +40,4 @@ function shuffleId() {
 }
 
 // console.log(shuffleId())
-export { shuffleId, userPicked }
+export { shuffleId }

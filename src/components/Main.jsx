@@ -1,12 +1,25 @@
 import React, { useState } from 'react';
 import { shuffleId } from './game';
 
-// const idArray = shuffleId();
-function Main() {
+const currentPicks = [];
+
+function Main({ score, setScore }) {
   const [names, setNames] = useState(shuffleId());
-  const handleClick = () => {
+
+  const comparePicks = (e) => {
+    if (currentPicks.includes(e.target.id)) {
+      setScore(0);
+    } else {
+      currentPicks.push(e.target.id);
+      setScore(score + 1);
+    }
+  };
+
+  const handleClick = (e) => {
+    comparePicks(e);
     setNames(shuffleId());
   };
+
   return (
     <main>
       {names.map((name) => (
