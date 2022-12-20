@@ -9,10 +9,12 @@ function Main({ score, setScore }) {
   const comparePicks = (e) => {
     if (currentPicks.includes(e.target.id)) {
       setScore(0);
+      currentPicks.length = 0;
     } else {
       currentPicks.push(e.target.id);
       setScore(score + 1);
     }
+    console.log(currentPicks);
   };
 
   const handleClick = (e) => {

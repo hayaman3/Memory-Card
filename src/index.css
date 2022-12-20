@@ -225,3 +225,11 @@ button {
   background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/malone.png);
   background-color: #552582;
 }
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
