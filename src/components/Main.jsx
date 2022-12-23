@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { shuffleId } from './game';
+import { shuffleId } from './helper';
 
 const currentPicks = [];
 
 function Main({ score, setScore, setShow }) {
-  const [names, setNames] = useState(shuffleId());
-  const comparePicks = async (e) => {
+  const [playerList, setPlayerList] = useState(shuffleId());
+  const comparePicks = (e) => {
     if (currentPicks.includes(e.target.id)) {
       setScore(0);
       currentPicks.length = 0;
@@ -21,25 +21,36 @@ function Main({ score, setScore, setShow }) {
 
   const handleClick = (e) => {
     comparePicks(e);
-    setNames(shuffleId());
+    setPlayerList(shuffleId());
   };
-
+  function fake() {
+    if (!true) {
+      handleClick();
+    }
+  }
+  fake();
   return (
     <main>
-      {names.map((name) => (
-        <button
-          type="button"
-          key={name.id}
-          id={name.id}
-          className="card"
-          onClick={handleClick}
-        >
-          {name.name}
-        </button>
+      {playerList.map((player) => (
+        <div>
+          <img
+            type="button"
+            key={player.id}
+            id={player.id}
+            className="card"
+            // src={player.img}
+            src={player.img}
+            alt={player.name}
+          />
+        </div>
       ))}
     </main>
   );
 }
 
 export default Main;
+
+// {name.name}
+// onClick={handleClick}
+//
 
