@@ -116,112 +116,118 @@ main {
   grid-gap: 10px;
   width: fit-content;
   margin-top: 10px;
+  overflow: none;
 }
 
 .card {
-  aspect-ratio: 1/ 1;
-  /* background-repeat: no-repeat;
-  background-size: auto 100%;
-  background-position: center center; */
-  object-fit: cover;
+  overflow: hidden;
+  border-radius: 10px;
   max-width: 200px;
   min-width: 50px;
-  border-radius: 10px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  color: white;
-  font-weight: bold;
   box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
-  font-family: 'Montserrat', 'Helvetica', 'Arial';
+
 }
 
-button {
-  width: 100%;
+.container {
+  max-width: 200px;
+  min-width: 50px;
+  overflow: hidden;
   padding: 0;
-  background-color: transparent;
-  border: none;
+  margin: 0;
+}
+
+.card-image {
+  aspect-ratio: 1/ 1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, black 0%, transparent 25%);
+}
+
+
+.container {
   font: inherit;
-  text-align: center
+  position: relative;
+}
+
+.player-name {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: 'Montserrat', 'Helvetica', 'Arial';
+  color: white;
+  font-weight: bold;
 }
 
 #jordan {
-  /* background-image: linear-gradient(to top, black 0%, transparent 25%), url('./assets/jordan.png'); */
   background-color: #BA0C2F;
 }
 
 #lebron {
-  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/jordan.png);
   background-color: #582C83;
 }
 
 #kareem {
-  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/kareem.png);
   background-color: #702F8A;
 }
 
 #russell {
-  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/russell.png);
   background-color: #007A33;
 }
 
 #magic {
-  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/magic.png);
   background-color: #702F8A;
 }
 
 #wilt {
-  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/wilt.png);
   background-color: #002F6C;
 }
 
 #bird {
-  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/bird.png);
   background-color: #007A33;
 }
 
 #shaq {
-  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/shaq.png);
   background-color: #702F8A;
 }
 
 #duncan {
-  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/duncan.png);
   background-color: #8D9093;
 }
 
 #kobe {
-  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/kobe.png);
   background-color: #702F8A;
 }
 
 #hakeem {
-  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/hakeem.png);
   background-color: #BA0C2F;
 }
 
 #oscar {
-  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/oscar.png);
   background-color: #002F6C;
 }
 
 #kd {
-  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/kd.png);
   background-color: #707372;
 }
 
 #west {
-  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/west.png);
   background-color: #004B87;
 }
 
 #steph {
-  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/steph.png);
   background-color: #1D4289;
 }
 
 #malone {
-  background-image: linear-gradient(to top, black 0%, transparent 25%), url(./assets/malone.png);
   background-color: #552582;
 }
 

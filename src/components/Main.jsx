@@ -5,12 +5,13 @@ const currentPicks = [];
 
 function Main({ score, setScore, setShow }) {
   const [playerList, setPlayerList] = useState(shuffleId());
-  const comparePicks = (e) => {
-    if (currentPicks.includes(e.target.id)) {
+
+  const comparePicks = (id) => {
+    if (currentPicks.includes(id)) {
       setScore(0);
       currentPicks.length = 0;
     } else {
-      currentPicks.push(e.target.id);
+      currentPicks.push(id);
       setScore(score + 1);
       if (currentPicks.length === 16) {
         setShow(true);
@@ -20,29 +21,30 @@ function Main({ score, setScore, setShow }) {
   };
 
   const handleClick = (e) => {
-    comparePicks(e);
+    comparePicks(e.target.closest('button').id);
     setPlayerList(shuffleId());
   };
-  function fake() {
-    if (!true) {
-      handleClick();
-    }
-  }
-  fake();
+
   return (
     <main>
       {playerList.map((player) => (
-        <div>
-          <img
-            type="button"
-            key={player.id}
-            id={player.id}
-            className="card"
-            // src={player.img}
-            src={player.img}
-            alt={player.name}
-          />
-        </div>
+        <button
+          type="button"
+          onClick={handleClick}
+          key={player.id}
+          id={player.id}
+          className="card"
+        >
+          <div className="container">
+            <div className="gradient" />
+            <img
+              className="card-image"
+              src={player.img}
+              alt={player.name}
+            />
+            <span className="player-name">{player.name}</span>
+          </div>
+        </button>
       ))}
     </main>
   );
